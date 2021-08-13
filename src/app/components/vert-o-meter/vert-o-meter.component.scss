@@ -1,0 +1,92 @@
+@import "colors";
+
+:host {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 58px;
+
+  width: 30px;
+
+  transform: translateX(-50%) rotate(180deg);
+  transition: all 0.2 ease-in-out;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin-top: 44px;
+
+  .type {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    padding: 0 8px;
+
+    transform: translateY(calc(-50%));
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+
+    &:first-of-type {
+      left: 0;
+    }
+
+    &:last-of-type {
+      right: 0;
+    }
+  }
+
+  .vert-o-meter {
+    display: flex;
+    width: fit-content;
+
+    border-radius: 8px;
+
+    .block {
+      position: relative;
+      height: 46px;
+      width: 46px;
+
+      background-color: white;
+      border: 1px solid transparent;
+      border-left: none;
+      color: black;
+      opacity: 0.9;
+
+      &:first-of-type {
+        border-left: 1px solid transparent;
+        border-radius: 8px 0 0 8px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 8px 8px 0;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        background-color: $vert-low;
+      }
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        background-color: $vert-medium;
+      }
+
+      &:nth-child(1),
+      &:nth-child(6) {
+        background-color: $vert-high;
+      }
+    }
+  }
+}
