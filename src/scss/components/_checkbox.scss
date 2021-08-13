@@ -1,0 +1,15 @@
+input[type="checkbox"] {
+  display: none;
+}
+.label {
+  display: inline-block;
+  background-image: url(/assets/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: left;
+
+  padding-left: 30px;
+}
+input[type="checkbox"]:checked + .label {
+  background-image: url(/assets/checkbox-checked.svg);
+}
