@@ -1,0 +1,139 @@
+@import "colors";
+
+.headline-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 456px;
+
+  background-color: $main-color;
+}
+
+.headline {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 60px auto 30px;
+  max-width: 882px;
+
+  color: white;
+
+  &-title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 40px;
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  &-author {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.8;
+  }
+
+  &-title,
+  &-subtitle {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 auto 64px;
+  padding: 0 24px;
+  max-width: 700px;
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 400px;
+
+    padding: 40px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 16px;
+
+    &-question {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 28px;
+      color: black;
+      user-select: none;
+      margin: 16px 0;
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--side {
+        display: flex;
+        align-items: center;
+
+        button {
+          &:first-of-type {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .results {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      text-align: center;
+      min-height: 400px;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 16px;
+
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 864px) {
+  .headline {
+    margin: 30px auto;
+    &-title {
+      font-size: 38px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      line-height: 28px;
+      padding: 0 24px;
+    }
+  }
+}
+
