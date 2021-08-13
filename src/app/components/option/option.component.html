@@ -1,0 +1,4 @@
+<label *ngIf="option" class="option">
+    <input type="checkbox" [(ngModel)]="option.isChecked" [attr.checked]="option.isChecked">
+    <span class="label">{{ option.text }}</span>
+</label>
