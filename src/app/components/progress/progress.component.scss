@@ -1,0 +1,84 @@
+@import "colors";
+
+@mixin top-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+}
+
+@mixin slide-animation {
+  transition: all 0.2s ease-out ;
+}
+
+.progress {
+  &-bar {
+    position: relative;
+    margin-bottom: 8px;
+
+    &--bullet {
+      position: relative;
+      z-index: 3;
+
+      width: 30px;
+      height: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      top: 50%;
+      left: 0;
+      transform: translateX(-50%);
+      @include slide-animation;
+
+      &__value {
+        z-index: 4;
+
+        color: white;
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+      }
+
+      &:before {
+        @include top-center-absolute;
+        content: "";
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $main-color;
+      }
+    }
+
+    &--fill {
+      @include top-center-absolute;
+      @include slide-animation;
+
+      z-index: 2;
+
+      width: 0%;
+      height: 4px;
+      background-color: $main-color;
+    }
+
+    &--background {
+      @include top-center-absolute;
+      z-index: 1;
+
+      background-color: $grey-light;
+      width: 100%;
+      height: 4px;
+    }
+  }
+
+  &-status {
+    display: flex;
+    justify-content: space-between;
+    color: $main-color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

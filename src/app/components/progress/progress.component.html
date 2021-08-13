@@ -1,0 +1,12 @@
+<div class="progress-bar">
+    <span class="progress-bar--bullet" [style.left]="currentIndex | calcPercent: total">
+        <span class="progress-bar--bullet__value">{{ currentIndex }}</span>
+    </span>
+    <div class="progress-bar--fill" [style.width]="currentIndex | calcPercent: total"></div>
+    <div class="progress-bar--background"></div>
+</div>
+
+<div class="progress-status">
+    <span>Question {{ currentIndex }} of {{ total }}</span>
+    <span>{{ currentIndex | calcPercent: total }}</span>
+</div>
