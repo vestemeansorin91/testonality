@@ -1,0 +1,109 @@
+{
+    "questions": [
+        {
+            "question": "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
+            "options": [
+                {
+                    "value": -3,
+                    "text": "Don’t dare to interrupt them"
+                },
+                {
+                    "value": 3,
+                    "text": "Think it’s more important to give them some of your time; work can wait"
+                },
+                {
+                    "value": 0,
+                    "text": "Listen, but with only with half an ear"
+                },
+                {
+                    "value": 2,
+                    "text": "Interrupt and explain that you are really busy at the moment"
+                }
+            ]
+        },
+        {
+            "question": "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
+            "options": [
+                {
+                    "value": -2,
+                    "text": "Look at your watch every two minutes"
+                },
+                {
+                    "value": -3,
+                    "text": "Bubble with inner anger, but keep quiet"
+                },
+                {
+                    "value": 0,
+                    "text": "Explain to other equally impatient people in the room that the doctor is always running late"
+                },
+                {
+                    "value": -2,
+                    "text": "Complain in a loud voice, while tapping your foot impatiently"
+                }
+            ]
+        },
+        {
+            "question": "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
+            "options": [
+                {
+                    "value": -2,
+                    "text": "Don’t dare contradict them"
+                },
+                {
+                    "value": 2,
+                    "text": "Think that they are obviously right"
+                },
+                {
+                    "value": 1,
+                    "text": "Defend your own point of view, tooth and nail"
+                },
+                {
+                    "value": -3,
+                    "text": "Continuously interrupt your colleague"
+                }
+            ]
+        },
+        {
+            "question": "You are taking part in a guided tour of a museum. You:",
+            "options": [
+                {
+                    "value": -1,
+                    "text": "Are a bit too far towards the back so don’t really hear what the guide is saying"
+                },
+                {
+                    "value": -1,
+                    "text": "Follow the group without question"
+                },
+                {
+                    "value": 3,
+                    "text": "Make sure that everyone is able to hear properly"
+                },
+                {
+                    "value": 2,
+                    "text": "Are right up the front, adding your own comments in a loud voice"
+                }
+            ]
+        },
+        {
+            "question": "During dinner parties at your home, you have a hard time with people who:",
+            "options": [
+                {
+                    "value": 3,
+                    "text": "Ask you to tell a story in front of everyone else"
+                },
+                {
+                    "value": -1,
+                    "text": "Talk privately between themselves"
+                },
+                {
+                    "value": 3,
+                    "text": "Hang around you all evening"
+                },
+                {
+                    "value": -1,
+                    "text": "Always drag the conversation back to themselves"
+                }
+            ]
+        }
+    ]
+}
