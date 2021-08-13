@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "e2e": "ng e2e",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
