@@ -2,18 +2,34 @@
 import { initEnv, mount } from 'cypress-angular-unit-test';
 
 import { AppComponent } from './app.component';
-// This 👇 is a dependency needed for router-outlet located in our app.component.html
+import { CalcPercentPipe } from './pipes/calc-percent.pipe';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { OptionComponent } from './components/option/option.component';
+import { ProgressComponent } from './components/progress/progress.component';
+import { QuestionsService } from './services/questions.service';
 import { RouterTestingModule } from '@angular/router/testing';
+import { VertOMeterComponent } from './components/vert-o-meter/vert-o-meter.component';
+
 beforeEach(() => {
-  // Init Angular stuff
-  initEnv(AppComponent, { imports: [ RouterTestingModule ] });
+  initEnv(AppComponent, {
+    imports: [
+      RouterTestingModule,
+      FormsModule,
+      HttpClientModule
+    ],
+    declarations: [
+      OptionComponent,
+      ProgressComponent,
+      VertOMeterComponent,
+      CalcPercentPipe
+    ],
+    providers: [QuestionsService]
+  });
 });
 describe('AppComponent', () => {
-  it('Test welcome message', () => {
-    const welcomeMessage = 'blog-angular-cypress-example';
-    // component + any inputs object
-    mount(AppComponent, {title: welcomeMessage});
-    // use any Cypress command afterwards
-    cy.contains(`${welcomeMessage} app is running!`);
+  it('component mount', () => {
+    mount(AppComponent, { currentIndex: 0 });
+    cy.contains('Are you');
   });
 });
