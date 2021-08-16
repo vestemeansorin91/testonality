@@ -8,8 +8,8 @@ beforeEach(() => {
   initEnv(VertOMeterComponent, { imports: [] , declarations: [CalcPercentPipe]});
 });
 describe('VertOMeterComponent', () => {
-  it('component mount', () => {
+  it('VertOMeterComponent should mount', () => {
     mount(VertOMeterComponent);
-    cy.contains('introvert');
+    cy.get('.arrow').should('be.visible');
   });
 });

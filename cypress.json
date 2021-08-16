@@ -7,5 +7,6 @@
   "fixturesFolder": "cypress/fixtures",
   "baseUrl": "http://localhost:4200",
   "componentFolder": "src/app",
-  "testFiles": "**/*cy-spec.*"
+  "testFiles": "**/*cy-spec.*",
+  "fileServerFolder": "cypress/fileServerFolder"
 }

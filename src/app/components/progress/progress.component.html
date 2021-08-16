@@ -8,5 +8,5 @@
 
 <div class="progress-status">
     <span>Question {{ currentIndex }} of {{ total }}</span>
-    <span>{{ currentIndex | calcPercent: total }}</span>
+    <span data-cy="total-progress">{{ currentIndex | calcPercent: total }}</span>
 </div>

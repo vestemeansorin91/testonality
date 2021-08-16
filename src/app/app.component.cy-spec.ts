@@ -28,8 +28,7 @@ beforeEach(() => {
   });
 });
 describe('AppComponent', () => {
-  it('component mount', () => {
-    mount(AppComponent, { currentIndex: 0 });
-    cy.contains('Are you');
+  it('App component mount', () => {
+    mount(AppComponent);
   });
 });

@@ -6,6 +6,9 @@ export enum Meter {
   HIGH = 15
 }
 
+// Could be more dynamic, done with a formula, but for the current app logic
+// the maximum / minimum points that you can get is
+// either -19 or 19 points, 0 is in the middle
 export const MAX_VALUE = 38;
 
 @Component({
@@ -17,5 +20,4 @@ export class VertOMeterComponent {
   public blocks: boolean[] = new Array(6).fill(false);
   public MAX_VALUE = MAX_VALUE;
   @Input() public value: number = 0;
-
 }

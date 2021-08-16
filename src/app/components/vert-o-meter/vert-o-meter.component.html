@@ -1,9 +1,9 @@
 
 <div class="container">
     <span class="type">introvert</span>
-    <span class="type">extrovert</span>
     <img src="/assets/arrow.png" class="arrow" [style.left]="(value + MAX_VALUE / 2) | calcPercent: MAX_VALUE">
     <div class="vert-o-meter">
         <div *ngFor="let block of blocks; let i = index" class="block" [class.is-active]="block"></div>
     </div>
+    <span class="type">extrovert</span>
 </div>
